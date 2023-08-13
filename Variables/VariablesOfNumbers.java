@@ -18,5 +18,22 @@ public class VariablesOfNumbers {
         System.out.println(Long.MIN_VALUE);
 
         // these types of numbers are whole numbers like 1000.
+        // byte -> short -> int -> long
+
+        short j = 1000;
+        int i = ((int)j / 2);
+
+        byte x = 100;
+        byte y = (byte)(x / 2);
+
+        System.out.println(y);
+
+        short q = 100;
+        byte w = 2;
+        int e = 4;
+
+        long r = q + w + e;
+
+        System.out.println(r);
     }
 }
