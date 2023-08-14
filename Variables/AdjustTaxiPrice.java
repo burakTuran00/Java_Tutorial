@@ -10,6 +10,6 @@ public class AdjustTaxiPrice {
         System.out.print("How many kilometer are you going:");
         int kilometer = scanner.nextInt();
 
-        System.out.println("The total amount of your cost is about "+ (cost * kilometer)+ "$");
+        System.out.println("The total amount of your cost is about " + (cost * kilometer)+ "$");
     }
 }
