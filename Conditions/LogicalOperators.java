@@ -8,5 +8,6 @@ public class LogicalOperators {
 
         System.out.println(3 == 3 && 2 != 3); // Both condition is true, then true.
         System.out.println(1 != 1 || 3 > 1); // One condition is ture, then true.
+        System.out.println(!(1 != 1));
     }
 }
