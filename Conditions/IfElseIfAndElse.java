@@ -3,31 +3,39 @@ public class IfElseIfAndElse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a number:");
+        System.out.print("Enter your note:");
         int n = scanner.nextInt();
 
-        if (n == 0)
+        if (n >= 90)
         {
-            System.out.println("0 result.");
+            System.out.println("Grade:AA");
         }
-        else if (n == 1)
+        else if (n >= 85)
         {
-            System.out.println("1 result.");
+            System.out.println("Grade:BA");
         }
-        else if (n == 2)
-        {
-            System.out.println("2 result.");
+        else if (n >= 80) {
+            System.out.println("Grade:BB");
         }
-        else if (n ==3)
+        else if (n >= 75)
         {
-            System.out.println("3 result.");
+            System.out.println("Grade:CB");
+        }
+        else if (n >= 70)
+        {
+            System.out.println("Grade:CC");
+        }
+        else if (n >= 65)
+        {
+            System.out.println("Grade:DC");
+        }
+        else if (n >= 60)
+        {
+            System.out.println("Grade:DD");
         }
         else
         {
-            System.out.println("Not found.");
+            System.out.println("Grade:FF");
         }
-
-
-
     }
 }
