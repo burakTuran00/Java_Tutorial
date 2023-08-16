@@ -13,6 +13,7 @@ public class DoWhileLoop {
     {
       result += number % 10;
       number /= 10;
+      System.out.println("number="+number);
 
     }while (number > 0);
 
