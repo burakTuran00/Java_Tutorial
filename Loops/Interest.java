@@ -19,6 +19,6 @@ public class Interest {
             totalMoney = (totalMoney * interest ) + totalMoney;
         }
 
-        System.out.print("The total money is equal "+ totalMoney + "at " +year+ " years.");
+        System.out.print("The total money is equal "+ Math.round(totalMoney) + "$ at " +year+ " years.");
     }
 }
