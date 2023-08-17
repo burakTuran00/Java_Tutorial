@@ -6,8 +6,8 @@ public class ATM {
         int balance = 100;
         String circumstance = "1- To check money\n"
                              +"2- To withdraw money\n"
-                            +"3- To invest money\n"
-                            +"4- To exit(q)";
+                             +"3- To invest money\n"
+                             +"4- To exit(q)";
 
         System.out.println("************************");
         System.out.println(circumstance);
