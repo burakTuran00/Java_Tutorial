@@ -12,6 +12,5 @@ public class ReturnInMethods {
         int resutl = Addition(1,2,3); // 6
         System.out.println(resutl + Addition(1,2,3)); // 6 + 6 = 12
 
-
     }
 }
