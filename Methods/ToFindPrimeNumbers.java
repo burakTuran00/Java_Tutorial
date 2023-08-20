@@ -18,9 +18,7 @@ public class ToFindPrimeNumbers {
             {
                 return false;
             }
-
         }
-
         return true;
     }
 }
