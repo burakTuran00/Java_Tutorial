@@ -1,14 +1,11 @@
 public class StructureOfClass {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Car car1 = new Car();
 
-        car1.color = "Red";
-        car1.modelYear = 2020;
-        car1.branch = "Toyota";
-        car1.model = "Corolla";
-        car1.type = "Sedan";
+        car1.setModel("BMW");
+        System.out.println(car1.getModel());
 
-        System.out.println(car1.type);
+        car1.setModelYear(1999);
+       // System.out.println(car1.getModelYear());
     }
 }
