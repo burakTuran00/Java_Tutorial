@@ -15,5 +15,17 @@ public class Test
 
         account2.InvestMoney(500);
         account2.WithdrawMoney(6000);
+
+        Account account3 = new Account();
+
+        System.out.println(account3.getAccountMail());
+
+        Account account4 = new Account("Ahmet","Ahmet@gmail.com","852 256 97 79");
+         /*  System.out.println(account4.getAccountMail());
+        System.out.println(account4.getAccountBalance());*/
+
+        account4.ShowInfo();
+
+
     }
 }

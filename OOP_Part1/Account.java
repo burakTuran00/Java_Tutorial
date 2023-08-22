@@ -7,7 +7,17 @@ public class Account {
 
      public Account()
      {
-         System.out.println("My own written consturactor.");
+         /* this.accountNo = "No-Info";
+         this.accountBalance = 0.0;
+         this.accountNo = "No-Info";
+         this.accountMail = "No-Info";
+         this.accountTelNo = "No-Info";*/
+
+         this("No-Info", 0.0, "No-Info", "No-Info","No-Info");
+     }
+
+     public Account(String accountOwnerName, String accountMail, String accountTelNo){
+         this("No-Info", 0.0, accountOwnerName, accountMail, accountTelNo);
      }
 
      public Account(String accountNo, double accountBalance, String accountOwnerName, String accountMail, String accountTelNo)
@@ -41,6 +51,15 @@ public class Account {
             accountBalance -= amount;
             System.out.println("New balance:"+accountBalance);
         }
+     }
+
+     public void ShowInfo()
+     {
+         System.out.println(this.accountNo);
+         System.out.println(this.accountBalance);
+         System.out.println(this.accountOwnerName);
+         System.out.println(this.accountMail);
+         System.out.println(this.accountTelNo);
      }
 
     public String getAccountNo() {
