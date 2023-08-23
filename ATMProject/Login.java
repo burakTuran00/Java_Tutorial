@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Login {
-    public boolean login( Account account)
+    public boolean login(Account account)
     {
         Scanner scanner = new Scanner(System.in);
         String userId, userPassword;
