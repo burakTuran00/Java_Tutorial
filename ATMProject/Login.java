@@ -11,7 +11,7 @@ public class Login {
         System.out.print("Password:");
         userPassword = scanner.next();
 
-        if (account.getId().equals(userId) && account.getPassword().equals(userPassword))
+        if(account.getId().equals(userId) && account.getPassword().equals(userPassword))
         {
             return true;
         }
