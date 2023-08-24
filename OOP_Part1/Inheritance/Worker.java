@@ -1,3 +1,5 @@
+package Inheritance;
+
 public class Worker
 {    // Super or Base class
     private String name;

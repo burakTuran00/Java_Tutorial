@@ -1,3 +1,5 @@
+package Inheritance;
+
 public class Manager extends Worker
 {
     // Subclass
@@ -18,9 +20,10 @@ public class Manager extends Worker
 
     public void ShowInfo()
     {
-      /*System.out.println("Name:"+ getName());
+        /*System.out.println("Name:"+ getName());
         System.out.println("Income:"+ getIncome());
         System.out.println("Department:"+ getDepartment());*/
+
         super.ShowInfo(); // In worker class, show us the ShowInfo class.
 
         System.out.println("People in charge:" + getHowManyPeople());
