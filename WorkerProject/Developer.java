@@ -2,8 +2,6 @@ import javax.lang.model.element.NestingKind;
 
 public class Developer extends  Worker
 {
-
-
     private String languages;
     public Developer(String name, String surname, int id, String languages)
     {

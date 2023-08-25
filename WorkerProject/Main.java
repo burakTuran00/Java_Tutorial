@@ -27,7 +27,38 @@ public class Main
             }
             else if(process.equals("1"))
             {
-                Deve
+                Developer developer = new Developer("Burak","Turan",74,"C++ & C#");
+                String developerOperation = "1- To format\n"+
+                                            "2- To show Info"+
+                                            "Press q to exit!";
+                System.out.println(developerOperation);
+
+                while (true)
+                {
+                    System.out.print("Select a code of developer operation:");
+                    String developerProcess = scanner.nextLine();
+
+                    if (developerProcess.equals("q"))
+                    {
+                        System.out.println("Leaving in the developer operation!");
+                        break;
+                    }
+                    else if(developerProcess.equals("1"))
+                    {
+                        System.out.print("Operating System:");
+                        String operatingSystem = scanner.nextLine();
+
+                        developer.ToFormat(operatingSystem);
+                    }
+                    else if(developerProcess.equals("2"))
+                    {
+                        developer.ShowInfo();
+                    }
+                    else
+                    {
+                        System.out.println("Invalid developer operation...");
+                    }
+                }
             }
             else if(process.equals("2"))
             {
