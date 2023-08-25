@@ -28,7 +28,8 @@ public class Main
             else if(process.equals("1"))
             {
                 Developer developer = new Developer("Burak","Turan",74,"C++ & C#");
-                String developerOperation = "1- To format\n"+
+                String developerOperation = "Developer Operations\n " +
+                                            "1- To format\n"+
                                             "2- To show Info"+
                                             "Press q to exit!";
                 System.out.println(developerOperation);
@@ -62,7 +63,18 @@ public class Main
             }
             else if(process.equals("2"))
             {
+                Manager manager = new Manager("Serhat","Yaşar",3,10);
+                String managerOperation = "Manager Operations\n"+
+                                            "1- Increase Salary\n"+
+                                            "2- Show Info\n"+
+                                            "Press q to exit!";
+                System.out.println(managerOperation);
 
+                while (true)
+                {
+                    System.out.print("Select a code of manager operation:");
+                    String managerProcess = scanner.nextLine();
+                }
             }
             else {
                 System.out.println("Invalid operation, Enter valid operation!");
