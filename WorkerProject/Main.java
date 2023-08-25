@@ -28,9 +28,9 @@ public class Main
             else if(process.equals("1"))
             {
                 Developer developer = new Developer("Burak","Turan",74,"C++ & C#");
-                String developerOperation = "Developer Operations\n " +
+                String developerOperation = "Developer Operations\n" +
                                             "1- To format\n"+
-                                            "2- To show Info"+
+                                            "2- To show Info\n"+
                                             "Press q to exit!";
                 System.out.println(developerOperation);
 
@@ -82,7 +82,7 @@ public class Main
                     }
                     else if(managerProcess.equals("1"))
                     {
-                        System.out.print("How much do you want to increase your many to the manager:");
+                        System.out.print("How much do you want to increase your money to the manager:");
                         int increaseAmount = scanner.nextInt();
                         scanner.nextLine();
 
