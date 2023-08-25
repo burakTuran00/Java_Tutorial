@@ -74,6 +74,28 @@ public class Main
                 {
                     System.out.print("Select a code of manager operation:");
                     String managerProcess = scanner.nextLine();
+
+                    if (managerProcess.equals("q"))
+                    {
+                        System.out.println("Leaving in the manager operation!");
+                        break;
+                    }
+                    else if(managerProcess.equals("1"))
+                    {
+                        System.out.print("How much do you want to increase your many to the manager:");
+                        int increaseAmount = scanner.nextInt();
+                        scanner.nextLine();
+
+                        manager.IncreaseTheSalary(increaseAmount);
+                    }
+                    else if(managerProcess.equals("2"))
+                    {
+                        manager.ShowInfo();
+                    }
+                    else
+                    {
+                        System.out.println("Invalid manager operation!");
+                    }
                 }
             }
             else {
