@@ -66,7 +66,7 @@ public class Main {
     }
     public static void TalkFunc(Object object)
     {
-        // aganist to polymorphism, use it.
+        // aganist to polymorphism, use it. In this struct we show that what if polymorphism doesn't exist.
 
         if (object instanceof Dog)
         {
@@ -110,14 +110,14 @@ public class Main {
 
 
 
-       Dog dog = new Dog("karabaş");
-        Cat cat = new Cat("tekir");
-        Horse horse = new Horse("yaman");
-        Animal animal = new Animal("Turp");
+       Dog dogAP = new Dog("karabaş");
+        Cat catAP = new Cat("tekir");
+        Horse horseAP = new Horse("yaman");
+        Animal animalAP = new Animal("Turp");
 
-        TalkFunc(dog);
-        TalkFunc(cat);
-        TalkFunc(horse);
-        TalkFunc(animal);
+        TalkFunc(dogAP);
+        TalkFunc(catAP);
+        TalkFunc(horseAP);
+        TalkFunc(animalAP);
     }
 }
