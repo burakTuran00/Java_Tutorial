@@ -19,6 +19,6 @@ public class Main
         System.out.println(mechanicalEngineer.averageNote(2.75));
         mechanicalEngineer.experience(experiences2);
         mechanicalEngineer.getReferance(referance);
-
+        mechanicalEngineer.Work(); // from another interface
     }
 }

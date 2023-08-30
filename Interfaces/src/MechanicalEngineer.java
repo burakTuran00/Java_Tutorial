@@ -1,4 +1,4 @@
-public class MechanicalEngineer implements IEngineer
+public class MechanicalEngineer implements IEngineer,IWork
 {
     private boolean cleanPerson;
 
@@ -71,5 +71,11 @@ public class MechanicalEngineer implements IEngineer
                 System.out.println(x);
             }
         }
+    }
+
+    @Override
+    public void Work()
+    {
+        System.out.println("I'm working as a mechanical engineer.");
     }
 }
