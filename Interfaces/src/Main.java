@@ -8,8 +8,17 @@ public class Main
         computerEngineer.didYouDoSolider();
         computerEngineer.areYouClean();
         System.out.println(computerEngineer.averageNote(3.24));
-        
         String[] experiences = {"Vestel","Microsoft","Dell"};
         computerEngineer.experience(experiences);
+
+        MechanicalEngineer mechanicalEngineer = new MechanicalEngineer(false,true);
+        String[] experiences2 = {};
+        String[] referance = {"Sam Witciky","Alfred Nolan"};
+        mechanicalEngineer.areYouClean();
+        mechanicalEngineer.didYouDoSolider();
+        System.out.println(mechanicalEngineer.averageNote(2.75));
+        mechanicalEngineer.experience(experiences2);
+        mechanicalEngineer.getReferance(referance);
+
     }
 }
