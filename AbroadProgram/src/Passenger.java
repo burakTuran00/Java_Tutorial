@@ -28,7 +28,7 @@ public class Passenger implements  IAbroadRules
         System.out.print("Do you have valid visa (Yes-No):");
         String answer2 = scanner.nextLine();
 
-            if(answer.equals("Yes"))
+            if(answer2.equals("Yes"))
             {
                 this.visestate = true;
             }
@@ -41,11 +41,11 @@ public class Passenger implements  IAbroadRules
     public boolean abroadInterestCost() {
         if(this.interestCost <15)
         {
-            System.out.println("Please, purchase the whole interest cost!");
+            System.out.println("->Please, purchase the whole interest cost!");
             return false;
         }
         else {
-            System.out.println("Interest Cost Valid");
+            System.out.println("->Interest Cost Valid");
             return true;
         }
     }
@@ -54,11 +54,11 @@ public class Passenger implements  IAbroadRules
     public boolean politicalBan() {
         if(this.politicalban)
         {
-            System.out.println("You cannot go abroad because of political ban!");
+            System.out.println("->You cannot go abroad because of political ban!");
             return false;
         }
         else{
-            System.out.println("Doesn't have any ban!");
+            System.out.println("->Doesn't have any ban!");
             return true;
         }
     }
@@ -67,11 +67,11 @@ public class Passenger implements  IAbroadRules
     public boolean viseState() {
         if(this.visestate)
         {
-            System.out.println("Vise task is completed.");
+            System.out.println("->Vise task is completed.");
             return true;
         }
         else {
-            System.out.println("Didn't find the vize for that country");
+            System.out.println("->Didn't find the vise for that country");
             return false;
         }
     }
