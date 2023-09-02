@@ -5,15 +5,19 @@ public class Main {
 
         audience1.WathTheGame();
 
-        System.out.println("Total number of Audience:"  +Audience.getNumberAudience());
-        System.out.println("Total number of Audience:"  +audience1.getNumberAudience());
+        System.out.println("Total number of Audience:"  +Audience.getNumberAudience()); // class
+        System.out.println("Total number of Audience:"  +audience1.getNumberAudience());// object
 
-        SayHello();
-
-
+        SayHello();  // static function can be used in static function.
+      // SayHello2(); // non-static function cannot be used in static function.
     }
 
     public static void SayHello()
+    {
+        System.out.println("Hello...");
+    }
+
+    public void SayHello2()
     {
         System.out.println("Hello...");
     }

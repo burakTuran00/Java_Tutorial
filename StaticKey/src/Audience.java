@@ -22,6 +22,6 @@ public class Audience
 
     public static int getNumberAudience()
     {
-        return  numberAudience;
+        return numberAudience;
     }
 }
