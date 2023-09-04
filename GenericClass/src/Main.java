@@ -16,5 +16,21 @@ public class Main {
         printString.Print(stringArray);
         printChar.Print(charArray);
         printInt.Print(intArray);
+
+        PrintGenericMethod(charArray);
+    }
+
+    private static <E> void PrintGenericMethod(E[] arr) // definition of generic method
+    {
+        for(E e : arr)
+        {
+            System.out.println(e);
+        }
+    }
+
+    private static <E extends Student> E first(E e)
+    {
+    
+        return e;
     }
 }
