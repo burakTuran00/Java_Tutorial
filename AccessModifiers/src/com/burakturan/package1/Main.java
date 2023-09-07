@@ -1,7 +1,7 @@
-import com.burakturan.package1.Car;
+package com.burakturan.package1;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
+
     }
 }
