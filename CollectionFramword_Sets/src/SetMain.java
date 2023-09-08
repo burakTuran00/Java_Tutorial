@@ -7,6 +7,8 @@ public class SetMain
 {
     public static void main(String[] args)
     {
+        // you can store just one value of each.
+
         Set<String> set1 = new HashSet<String>();  // random sorting
         Set<String> set2 = new LinkedHashSet<String>(); // not sorting, just same
         Set<String> set3 = new TreeSet<String>();  // sorting alphabetic
@@ -32,6 +34,8 @@ public class SetMain
         set3.add("php");
         set3.add("c#");
 
+        set3.add("c#");// won't print, don't store
+
         System.out.println("------HashSet------");
         for(String s : set1)
         {
@@ -50,6 +54,26 @@ public class SetMain
         for(String s : set3)
         {
             System.out.println(s);
+        }
+
+        System.out.println(set1.contains("java")); // if that set contains the value, return true
+        System.out.println(set1.contains("Go"));
+
+        if(set1.isEmpty())
+        {
+            System.out.println("Yes, there is no element");
+        }
+        else
+        {
+            System.out.println("There is element.");
+        }
+
+        set3.remove("java");
+
+        System.out.println("------TreeSet------");
+        for(String s : set3)
+        {
+            System.out.println(s);  
         }
     }
 }
