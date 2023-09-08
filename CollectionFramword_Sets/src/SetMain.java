@@ -73,7 +73,26 @@ public class SetMain
         System.out.println("------TreeSet------");
         for(String s : set3)
         {
-            System.out.println(s);  
+            System.out.println(s);
         }
+
+        Set<String> set_1= new HashSet<String>();
+        Set<String> set_2 = new HashSet<String>();
+
+        set_1.add("java");
+        set_1.add("c++");
+        set_1.add("python");
+        set_1.add("php");
+        set_1.add("c#");
+
+        set_2.add("go");
+        set_2.add("java");
+        set_2.add("css");
+
+        Set<String> diference = new HashSet<String>(set_2);
+
+        System.out.println(diference.removeAll(set_1));
+        System.out.println(diference);
+
     }
 }
