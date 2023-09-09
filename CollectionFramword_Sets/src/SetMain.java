@@ -94,5 +94,10 @@ public class SetMain
         System.out.println(diference.removeAll(set_1));
         System.out.println(diference);
 
+
+        Set<String> common = new HashSet<String>(set_2);
+        common.retainAll(set_1);
+        System.out.println(common);
+
     }
 }
