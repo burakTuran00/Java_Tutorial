@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.ListIterator;
-import java.util.Vector;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args)
@@ -32,5 +29,42 @@ public class Main {
         System.out.println("------------");
         System.out.println(vector.firstElement());
         System.out.println(vector.lastElement());
+        System.out.println("------------");
+
+        Stack<String> stack = new Stack<String>();
+
+        stack.add("java");
+        stack.push("java");
+        stack.push("python");
+        stack.push("php");
+        stack.push("go");
+
+        for(int i=0; i < stack.size(); i++)
+        {
+            System.out.println(stack.get(i));
+        }
+
+        Enumeration<String> enumeration1 = stack.elements();
+        while (enumeration1.hasMoreElements())
+        {
+            System.out.println(enumeration1.nextElement());
+        }
+
+        System.out.println("Last elemant:"+stack.peek()); // last element
+        System.out.println("Removing last element"+stack.pop()); // remove last element
+
+        System.out.println("------------");
+        for(int i=0; i < stack.size(); i++)
+        {
+            System.out.println(stack.get(i));
+        }
+
+        System.out.println(stack.empty()); // false if there's element
+
+
+        while (!stack.empty())
+        {
+            System.out.println("Removing element "+stack.pop());
+        }
     }
 }
