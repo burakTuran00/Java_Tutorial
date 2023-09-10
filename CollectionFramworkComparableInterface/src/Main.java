@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
+
 class Player implements Comparable<Player>
 {
     private String name;
@@ -68,6 +66,18 @@ public class Main
         Collections.sort(listPlayer);
 
         for(Player p : listPlayer)
+        {
+            System.out.println(p.toString());
+        }
+
+        Set<Player> treeSet = new TreeSet<Player>();
+
+        treeSet.add(new Player("Murat",5));
+        treeSet.add(new Player("Kerem",1));
+        treeSet.add(new Player("Jacob",11));
+        treeSet.add(new Player("Luna",231));
+
+        for(Player p : treeSet)
         {
             System.out.println(p.toString());
         }
