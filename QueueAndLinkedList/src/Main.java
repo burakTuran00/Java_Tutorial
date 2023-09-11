@@ -14,7 +14,7 @@ public class Main {
         System.out.println(queue.peek()); // first element in the queue
 
         System.out.println(queue.poll()); // receive and remove first element in the queue, if no element then return null
-        
+
         System.out.println("-----------");
         for (String s : queue)
         {
