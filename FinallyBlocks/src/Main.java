@@ -12,7 +12,7 @@ public class Main {
             System.out.println("Null reference error!");
         }
         finally {
-            System.out.println("Finally block is working!"); // must work 
+            System.out.println("Finally block is working!"); // must work
         }
     }
 }
