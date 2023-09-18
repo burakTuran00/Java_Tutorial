@@ -2,7 +2,6 @@ import java.io.Serializable;
 
 public class Student implements Serializable
 {
-    private static final long serialVerisonUID = 1000;
     private String name;
     private int id;
     private String section;
