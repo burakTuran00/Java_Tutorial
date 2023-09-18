@@ -15,13 +15,13 @@ public class ReadObject
 
             for(Student s : studentsArray)
             {
-                System.out.println(s);
+                System.out.println(s.toString());
                 System.out.println("---------------");
             }
             System.out.println("**************************");
             for(Student s : studentList)
             {
-                System.out.println(s);
+                System.out.println(s.toString());
                 System.out.println("---------------");
             }
 
