@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 public class ListWorker
 {
+    
     Random random = new Random();
     ArrayList<Integer> list1 = new ArrayList<Integer>();
     ArrayList<Integer> list2 = new ArrayList<Integer>();
