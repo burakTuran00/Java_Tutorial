@@ -3,8 +3,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args)
     {
-        int[] array1 = {1,2};
-        int[] array2 = {3,4};
+        int[] array1 = {1,3};
+        int[] array2 = {2,7};
 
         System.out.println( findMedianSortedArrays(array1,array2));
     }
@@ -18,27 +18,29 @@ public class Main {
 
         for(int i=0; i<n;i++)
         {
-            merged[k] = nums1[i];
-            k++;
+            merged[k++] = nums1[i];
         }
 
         for(int i=0 ; i<m; i++)
         {
-            merged[k] = nums2[i];
-            k++;
+            merged[k++] = nums2[i];
         }
 
         Arrays.sort(merged);
 
-        int sum = 0;
 
-        for(int i = 0; i < merged.length;i++)
+        int totalLength = merged.length;
+
+        if(totalLength % 2 == 1)
         {
-            sum += merged[i];
+            return (double) merged[totalLength / 2];
         }
+        else
+        {
+            int left = merged[(totalLength/2) - 1];
+            int right = merged[(totalLength/2)];
 
-        double avarage = sum / (double)merged.length;
-
-        return avarage;
+            return (double) (left + right) /2.0;
+        }
     }
 }
