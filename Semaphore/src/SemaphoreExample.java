@@ -2,13 +2,14 @@ import java.util.concurrent.Semaphore;
 
 public class SemaphoreExample
 {
-    private Semaphore semaphore = new Semaphore(2);
+    // we define how much thread will come in.
+    private Semaphore semaphore = new Semaphore(2); // 2 thread come in
 
     public void threadFunction(int id)
     {
         try
         {
-            semaphore.acquire();
+            semaphore.acquire(); // control the space
         }
         catch (InterruptedException e)
         {
@@ -28,6 +29,6 @@ public class SemaphoreExample
 
         System.out.println(id+". thread is finished.");
 
-        semaphore.release();
+        semaphore.release(); // if thread duty is finished, then remove it and take new one.
     }
 }
