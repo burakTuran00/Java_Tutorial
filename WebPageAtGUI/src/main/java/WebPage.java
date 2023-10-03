@@ -56,7 +56,7 @@ public class WebPage extends javax.swing.JFrame {
                 .addComponent(webPageInput, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(104, 104, 104))
             .addGroup(layout.createSequentialGroup()
-                .addGap(152, 152, 152)
+                .addGap(163, 163, 163)
                 .addComponent(jButton1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -65,9 +65,9 @@ public class WebPage extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(97, 97, 97)
                 .addComponent(webPageInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addContainerGap(81, Short.MAX_VALUE))
+                .addGap(59, 59, 59))
         );
 
         pack();
