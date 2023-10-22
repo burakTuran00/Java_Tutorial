@@ -45,7 +45,7 @@ public class Graph
         {
             for(Node node : currentList)
             {
-                System.out.print(node.data + " ->");
+                System.out.print(node.data + " -> ");
             }
 
             System.out.println();
