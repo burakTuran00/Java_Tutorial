@@ -3,8 +3,8 @@ import java.text.*;
 import java.util.*;
 import javax.swing.*;
 
-public class MyFrame extends JFrame{
-
+public class MyFrame extends JFrame
+{
     Calendar calendar;
 
     SimpleDateFormat timeFormat;
