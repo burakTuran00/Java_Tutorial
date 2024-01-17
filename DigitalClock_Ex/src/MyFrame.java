@@ -25,10 +25,11 @@ public class MyFrame extends JFrame
         this.setLayout(new FlowLayout());
         this.setSize(350,200);
         this.setResizable(false);
+        this.setTitle("Clock");
 
         timeFormat = new SimpleDateFormat("hh:mm:ss a");
         dayFormat = new SimpleDateFormat("EEEE");
-        dateFormat = new SimpleDateFormat("MMMMM dd, yyyy");
+        dateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
         timeLabel = new JLabel();
         timeLabel.setFont(new Font("Verdana",Font.PLAIN,50));
